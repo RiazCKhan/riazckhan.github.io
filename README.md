@@ -1,3 +1,3 @@
-#COMP213 Web Interface Design
-<br>
+# COMP213 Web Interface Design
+
 Centennial College - Lab Assignment
