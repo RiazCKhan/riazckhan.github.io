@@ -1,0 +1,58 @@
+body {
+  color: white !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0.1rem solid white;
+  font-family: sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  width: 100%;
+  margin: 2rem;
+}
+
+thead {
+  color: black;
+  background-color: #00b8fc;
+}
+
+th,
+td {
+  border: 0.0625rem solid rgb(160 160 160);
+  padding: 0.5rem 0.625rem;
+}
+
+tbody > tr:nth-of-type(even) {
+  color: black !important;
+  background-color: #c0c0c0;
+}
+
+h3 {
+  color: #00b8fc !important;
+}
+
+.logi-logo {
+  max-width: 20rem;
+  height: auto;
+}
+
+.row-override {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.card-img-top-override {
+  width: 7.6rem;
+}
+
+.heatmap {
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+}
