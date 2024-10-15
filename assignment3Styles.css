@@ -56,3 +56,7 @@ h3 {
   border: 0.2rem solid white;
   border-radius: 1rem;
 }
+
+.larger-img {
+  width: 60%;
+}
