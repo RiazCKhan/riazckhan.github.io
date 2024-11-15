@@ -1,0 +1,49 @@
+body {
+  color: white !important;
+  background-color: #b3be62 !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  background-color: #545454 !important;
+}
+
+input,
+textarea {
+  background: transparent;
+}
+
+.text-input {
+  width: 100%;
+}
+
+section {
+  /* padding-top: 0.5rem; */
+  padding-bottom: 0.5rem;
+}
+
+.outer-form-border {
+  max-width: 80%;
+  padding: 1.25rem;
+}
+
+/* Inner container with the inner border */
+.inner-form-border {
+  border: 0.1875rem solid white; /* Inner border */
+  padding: 0.625rem; /* Padding inside the inner border */
+  background-color: #f0f0f0; /* Optional: Background color */
+}
+
+.centennial-logo {
+  display: flex;
+  width: 14rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.section-header {
+  font-weight: bold;
+  background-color: #b3be62;
+  padding: 0.3rem;
+  margin-bottom: 0.3rem;
+}

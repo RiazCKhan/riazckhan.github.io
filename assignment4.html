@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Student: Riaz Khan; Student # 300619796-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Continuing Education Instructor Evaluation</title>
+  <!-- Import Local CSS File -->
+  <link rel="stylesheet" href="assignment4Styles.css">
+  <!-- Add Bootstrap CSS Bundle -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Add Bootstrap Icon Bundle -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="container outer-form-border">
+
+  <main class="container inner-form-border">
+
+    <section class="px-5 py-3">
+
+      <!-- Header -->
+      <header class="container text-center">
+        <a target="_blank" href="https://centennialcollege.ca">
+          <img class="centennial-logo" src="./CentennialCMYK.jpg.jpeg" alt="Centennial College Logo">
+        </a>
+        <h4>Centennial College</h5>
+          <h5>Continuing Education Course / Instructor Evaluation</h3>
+            <hr>
+      </header>
+
+      <p>Please read each statement carefully and consider each on individually. Use the <b>computer card</b> to make
+        your
+        choice (use a pencil to fill in the sapce). Give only <b>one answer</b> for each question.</p>
+
+      <form action="" method="POST">
+
+        <!-- Course Name -->
+        <section>
+          <label for="courseName"><b>Course Name:</b></label>
+          <input class="text-input" type="text" id="course-name" name="course_name" placeholder="">
+        </section>
+
+        <!-- Semester -->
+        <section>
+          <label><b>Semester:</b></label>
+          <span class="px-4">
+            <input type="radio" id="semester-fall" name="semester" value="fall">
+            <label for="semester-fall">Fall</label>
+          </span>
+
+          <span class="px-4">
+            <input type="radio" id="semester-winter" name="semester" value="winter">
+            <label for="semester-winter">Winer</label>
+          </span>
+
+          <span class="px-4">
+            <input type="radio" id="semester-spring-summer" name="semester" value="spring-summer">
+            <label for="semester-spring-summer">Spring/Summer</label>
+          </span>
+
+          <span class="px-4">
+            <label for="semester-year">Year</label>
+            <input type="number" id="semester-year" name="semester-year" min="1900" max="2099" step="1" value="">
+          </span>
+        </section>
+
+        <!-- Instructor -->
+        <section>
+          <label for="instructorName"><b>Instructor:</b></label>
+          <input class="text-input" type="text" id="instructor-name" name="instructor_name" placeholder="">
+        </section>
+
+        <!-- Instructor Feedback -->
+        <section>
+          <div class="section-header">INSTRUCTOR</div>
+          <div>How would you rate the instuctor's:</div>
+
+          <ol>
+            <li>
+              <label><b>Knowledge</b> of subject?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="know-ex" name="instructor_knowledge" value="Excellent">
+                  <label for="knowledgeExcellent">Excellent</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="know-good" name="instructor_knowledge" value="Good">
+                  <label for="knowledgeGood">Good</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="know-fair" name="instructor_knowledge" value="Fair">
+                  <label for="knowledgeFair">Fair</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="know-not-sat" name="instructor_knowledge" value="Not Satisfactory">
+                  <label for="knowledgeNotSatisfactory">Not Satisfactory</label>
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <label><b>Helpfulness?</b></label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="help-ex" name="instructor_helpfulness" value="Excellent">
+                  <label for="helpfulnessExcellent">Excellent</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="help-good" name="instructor_helpfulness" value="Good">
+                  <label for="helpfulnessGood">Good</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="help-fair" name="instructor_helpfulness" value="Fair">
+                  <label for="helpfulnessFair">Fair</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="help-not-sat" name="instructor_helpfulness" value="Not Satisfactory">
+                  <label for="helpfulnessNotSatisfactory">Not Satisfactory</label>
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <label><b>Courtesy and respect</b> for all students?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="court-ex" name="instructor_courtesy" value="Excellent">
+                  <label for="courtesyExcellent">Excellent</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="court-good" name="instructor_courtesy" value="Good">
+                  <label for="courtesyGood">Good</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="court-fair" name="instructor_courtesy" value="Fair">
+                  <label for="courtesyFair">Fair</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="court-not-sat" name="instructor_courtesy" value="Not Satisfactory">
+                  <label for="courtesyNotSatisfactory">Not Satisfactory</label>
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <label><b>Communication</b> skill?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="comm-ex" name="instructor_communication" value="Excellent">
+                  <label for="communicationExcellent">Excellent</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="comm-good" name="instructor_communication" value="Good">
+                  <label for="communicationGood">Good</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="comm-fair" name="instructor_communication" value="Fair">
+                  <label for="communicationFair">Fair</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="comm-not-sat" name="instructor_communication" value="Not Satisfactory">
+                  <label for="communicationNotSatisfactory">Not Satisfactory</label>
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <label>Overall <b>Performance</b>?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="perform-ex" name="instructor_performance" value="Excellent">
+                  <label for="performanceExcellent">Excellent</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="perform-good" name="instructor_performance" value="Good">
+                  <label for="performanceGood">Good</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="perform-fair" name="instructor_performance" value="Fair">
+                  <label for="performanceFair">Fair</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="perform-not-sat" name="instructor_performance" value="Not Satisfactory">
+                  <label for="performanceNotSatisfactory">Not Satisfactory</label>
+                </span>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Course Feedback -->
+        <section>
+          <div class="section-header">COURSE</div>
+          <ol start="6">
+            <li>
+              <label>How would you rate the <b>course materials</b>?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="materials-ex" name="course_materials" value="Excellent">
+                  <label for="materialsExcellent">Excellent</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="materials-good" name="course_materials" value="Good">
+                  <label for="materialsGood">Good</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="materials-fair" name="course_materials" value="Fair">
+                  <label for="materialsFair">Fair</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="materials-not-sat" name="course_materials" value="Not Satisfactory">
+                  <label for="materialsNotSatisfactory">Not Satisfactory</label>
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <label>How much did this course meet your<b>expectations</b>?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="expect-ex" name="course_expectations" value="Excellent">
+                  <label for="expectationsExcellent">Excellent</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="expect-good" name="course_expectations" value="Good">
+                  <label for="expectationsGood">Good</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="expect-fair" name="course_expectations" value="Fair">
+                  <label for="expectationsFair">Fair</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="expect-not-sat" name="course_expectations" value="Not Satisfactory">
+                  <label for="expectationsNotSatisfactory">Not Satisfactory</label>
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <label>How would you rate this course (<b>overal</b>)?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="overall-ex" name="course_overall" value="Excellent">
+                  <label for="overallExcellent">Excellent</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="overall-good" name="course_overall" value="Good">
+                  <label for="overallGood">Good</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="overall-fair" name="course_overall" value="Fair">
+                  <label for="overallFair">Fair</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="overall-not-sat" name="course_overall" value="Not Satisfactory">
+                  <label for="overallNotSatisfactory">Not Satisfactory</label>
+                </span>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- General Information -->
+        <section>
+          <div class="section-header">GENERAL INFORMATION</div>
+          <ol start="9">
+            <li>
+              <label>Was the <b>course outline</b> reviewed/explained at the beginning of your course?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="genInfo-yes" name="genInfo_outline" value="Yes">
+                  <label for="genInfoYes">Yes</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="genInfo-no" name="genInfo_outline" value="No">
+                  <label for="genInfoNo">No</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="genInfo-not-sure" name="genInfo_outline" value="Not Sure">
+                  <label for="genInfoNotSure">Not Sure</label>
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <label>How much did this course meet your <b>expectations</b>?</label>
+              <div class="py-2">
+                <span class="px-4">
+                  <input type="radio" id="genInfo-yes" name="genInfo_recommend" value="Yes">
+                  <label for="recommendYes">Yes</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="genInfo-no" name="genInfo_recommend" value="No">
+                  <label for="recommendNo">No</label>
+                </span>
+
+                <span class="px-4">
+                  <input type="radio" id="genInfo-not-sure" name="genInfo_recommend" value="Not Sure">
+                  <label for="recommendNotSure">Not Sure</label>
+                </span>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Additional Comments -->
+        <section>
+          <div class="section-header">ANY OTHER COMMENTS <span> (please use the back
+              of the
+              computer card or this
+              paper if necessary)</span></div>
+
+          <ol start="11">
+            <li class="py-2">
+              <label for="addCommBest">What is the <b>best thing</b> about this course?</label>
+              <input class="text-input" type="text" id="add-comm-best" name="add_comments_best" placeholder="">
+            </li>
+
+            <li class="py-2">
+              <label for="addCommImprove">How could we <b>improve</b> this course?</label>
+              <input class="text-input" type="text" id="add-comm-improve" name="add_comments_improve" placeholder="">
+            </li>
+
+            <li class="py-2">
+              <label for="addCommOther">What is the <b>best thing</b> about this course:</label>
+              <div>
+
+                <textarea class="text-input" id="add-comm-other" name="add_comments_other" cols="50"
+                  placeholder=""></textarea>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Submit Button -->
+        <!-- <button type="submit">Submit</button> -->
+        <!-- Reset Button -->
+        <!-- <button type="reset">Reset</button> -->
+      </form>
+
+
+      <footer class="text-center py-1">
+        <h6><em>Thank you! We pay attention to your feedback!</em></h6>
+
+        <span class="px-2"><em>Web: <a href="www.centennialcollege.ca/continuing_education"
+              target="_blank">www.centennialcollege.ca/continuing_education</em></a></span>
+
+        <span class="px-2"><em>Email:
+            <a
+              href="mailto:continuingeducation@centennialcollege.ca">continingeducation@centennialcollege.ca</em></a></span>
+      </footer>
+
+    </section>
+
+  </main>
+
+
+  <!-- Add Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
