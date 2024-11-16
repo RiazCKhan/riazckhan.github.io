@@ -11,6 +11,7 @@ main {
 input,
 textarea {
   background: transparent;
+  color: white !important;
 }
 
 .text-input {
@@ -46,4 +47,10 @@ section {
   background-color: #b3be62;
   padding: 0.3rem;
   margin-bottom: 0.3rem;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 1rem;
 }
